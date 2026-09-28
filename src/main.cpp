@@ -1,0 +1,2 @@
+#include <SDL.h>
+int main(int argc, char* argv[]){SDL_Init(SDL_INIT_VIDEO);SDL_Window* w=SDL_CreateWindow("Loja",0,0,1920,1080,0);SDL_Renderer* r=SDL_CreateRenderer(w,-1,0);while(1){SDL_Event e;while(SDL_PollEvent(&e))if(e.type==SDL_QUIT)break;SDL_SetRenderDrawColor(r,20,20,25,255);SDL_RenderClear(r);SDL_RenderPresent(r);}return 0;}
